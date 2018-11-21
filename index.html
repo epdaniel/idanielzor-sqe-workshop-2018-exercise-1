@@ -56,7 +56,43 @@
                 </td>
             </tr>
         </table>
-
+        <span style="font-size: large; ">
+            <table id = "parsedTable" class="parsed" align="center">
+                <thead>
+                   <tr>
+                      <th>Line</th>
+                       <th>Type</th>
+                       <th>Name</th>
+                       <th>Condition</th>
+                       <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody id ="tableBody">
+                </tbody>
+            </table>
+            <style>
+                #parsedTable{
+                    border-collapse: collapse;
+                    border: 1px solid black;
+                    width: 55%;
+                    font-size: 15px;
+                    text-align: left;
+                    font-family: Tahoma, Geneva, sans-serif;
+                }
+                .parsed tr:nth-child(even) {
+                    background-color: #f2f2f2;
+                }
+                .parsed thead, th{
+                    background-color: lightskyblue;
+                    font-size: 16px;
+                }
+                .parsed td, th{
+                    padding-left:15px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                }
+            </style>
+        </span>
         <script src="dist/bundle.js"></script>
     </body>
 </html>
